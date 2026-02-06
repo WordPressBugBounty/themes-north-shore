@@ -5,8 +5,8 @@ Author: Out the Box
 Author URI: https://www.outtheboxthemes.com/
 Description: Breathe in the ocean. North Shore is a redesigned look with an ocean feel for our multipurpose theme CityLogic. North Shore's modest but eye-catching design makes it a great choice for creating any website from travel to business to food, decor, lifestyle, sport and more. The ability to have a transparent header allows the use of bold homepage imagery by displaying either a static header image or slider - with the choice of using the built-in slider or any 3rd party slider plugin of your choice. North Shore integrates seamlessly with a number of popular FREE plugins such as WooCommerce, WPForms and Recent Posts Widget Extended. It also works great with SiteOrigin's Page Builder plugin making it quick and easy to create professional looking pages without any coding knowledge. You're always one step ahead with North Shore! 
 Template: citylogic
-Version: 1.0.42
-Tested up to: 6.8
+Version: 1.0.43
+Tested up to: 6.9
 Requires PHP: 5.3
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -18,6 +18,7 @@ Tags: one-column, two-columns, left-sidebar, right-sidebar, grid-layout, flexibl
 	font-size: 45px;
 	letter-spacing: 1px;
 }
+
 .site-header .branding .description {
 	letter-spacing: 1px;
 }
@@ -34,7 +35,8 @@ Tags: one-column, two-columns, left-sidebar, right-sidebar, grid-layout, flexibl
 
 /* Mobile Menu and other mobile stylings */
 @media only screen and (max-width: 1000px) {
-    /* Mobile Menu Color */
+
+	/* Mobile Menu Color */
 	.main-navigation #main-menu {
 		background-color: #33a7a4;
 	}
@@ -68,33 +70,33 @@ Fallback CSS for Customizer Library Styles
 .site-header.transparent .site-header-right a:hover,
 .site-header.translucent .site-header-right a:hover,
 .main-navigation ul ul a:hover,
-.main-navigation ul ul li.current-menu-item > a,
-.main-navigation ul ul li.current_page_item > a,
-.main-navigation ul ul li.current-menu-parent > a,
-.main-navigation ul ul li.current_page_parent > a,
-.main-navigation ul ul li.current-menu-ancestor > a,
-.main-navigation ul ul li.current_page_ancestor > a,
+.main-navigation ul ul li.current-menu-item>a,
+.main-navigation ul ul li.current_page_item>a,
+.main-navigation ul ul li.current-menu-parent>a,
+.main-navigation ul ul li.current_page_parent>a,
+.main-navigation ul ul li.current-menu-ancestor>a,
+.main-navigation ul ul li.current_page_ancestor>a,
 .site-header .site-container .main-navigation ul ul a:hover,
-.site-header .site-container .main-navigation ul ul li.current-menu-item > a,
-.site-header .site-container .main-navigation ul ul li.current_page_item > a,
-.site-header .site-container .main-navigation ul ul li.current-menu-parent > a,
-.site-header .site-container .main-navigation ul ul li.current_page_parent > a,
-.site-header .site-container .main-navigation ul ul li.current-menu-ancestor > a,
-.site-header .site-container .main-navigation ul ul li.current_page_ancestor > a,
+.site-header .site-container .main-navigation ul ul li.current-menu-item>a,
+.site-header .site-container .main-navigation ul ul li.current_page_item>a,
+.site-header .site-container .main-navigation ul ul li.current-menu-parent>a,
+.site-header .site-container .main-navigation ul ul li.current_page_parent>a,
+.site-header .site-container .main-navigation ul ul li.current-menu-ancestor>a,
+.site-header .site-container .main-navigation ul ul li.current_page_ancestor>a,
 .main-navigation.transparent ul ul a:hover,
-.main-navigation.transparent ul ul li.current-menu-item > a,
-.main-navigation.transparent ul ul li.current_page_item > a,
-.main-navigation.transparent ul ul li.current-menu-parent > a,
-.main-navigation.transparent ul ul li.current_page_parent > a,
-.main-navigation.transparent ul ul li.current-menu-ancestor > a,
-.main-navigation.transparent ul ul li.current_page_ancestor > a,
+.main-navigation.transparent ul ul li.current-menu-item>a,
+.main-navigation.transparent ul ul li.current_page_item>a,
+.main-navigation.transparent ul ul li.current-menu-parent>a,
+.main-navigation.transparent ul ul li.current_page_parent>a,
+.main-navigation.transparent ul ul li.current-menu-ancestor>a,
+.main-navigation.transparent ul ul li.current_page_ancestor>a,
 .site-header.transparent .site-container .main-navigation ul ul a:hover,
-.site-header.transparent .site-container .main-navigation ul ul li.current-menu-item > a,
-.site-header.transparent .site-container .main-navigation ul ul li.current_page_item > a,
-.site-header.transparent .site-container .main-navigation ul ul li.current-menu-parent > a,
-.site-header.transparent .site-container .main-navigation ul ul li.current_page_parent > a,
-.site-header.transparent .site-container .main-navigation ul ul li.current-menu-ancestor > a,
-.site-header.transparent .site-container .main-navigation ul ul li.current_page_ancestor > a,
+.site-header.transparent .site-container .main-navigation ul ul li.current-menu-item>a,
+.site-header.transparent .site-container .main-navigation ul ul li.current_page_item>a,
+.site-header.transparent .site-container .main-navigation ul ul li.current-menu-parent>a,
+.site-header.transparent .site-container .main-navigation ul ul li.current_page_parent>a,
+.site-header.transparent .site-container .main-navigation ul ul li.current-menu-ancestor>a,
+.site-header.transparent .site-container .main-navigation ul ul li.current_page_ancestor>a,
 .woocommerce .woocommerce-breadcrumb a,
 .woocommerce-page .woocommerce-breadcrumb a,
 .woocommerce div.product .woocommerce-tabs ul.tabs li a:hover,
@@ -109,7 +111,7 @@ blockquote,
 .citylogic-page-builders-use-theme-styles .elementor-widget-icon.elementor-view-framed .elementor-icon,
 .citylogic-page-builders-use-theme-styles .elementor-widget-icon-box.elementor-view-default .elementor-icon,
 .citylogic-page-builders-use-theme-styles .elementor-widget-icon-box.elementor-view-framed .elementor-icon {
-    color: #33a7a4;
+	color: #33a7a4;
 }
 
 /*.citylogic-page-builders-use-theme-styles .sow-icon-fontawesome,*/
@@ -166,7 +168,7 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"],
 hr,
-ul.sections > li hr.divider,
+ul.sections>li hr.divider,
 .main-navigation li:hover .indicator,
 .main-navigation li.current_page_item .indicator,
 .main-navigation li.current-menu-item .indicator,
@@ -216,7 +218,7 @@ div.wpforms-container form.wpforms-form .wpforms-page-button,
 .site-footer-bottom-bar,
 .citylogic-page-builders-use-theme-styles .testimonials .sow-slider-base .sow-slide-nav,
 .citylogic-page-builders-use-theme-styles .elementor-widget-icon-box.elementor-view-stacked .elementor-icon {
-    background-color: #33a7a4;
+	background-color: #33a7a4;
 }
 
 .woocommerce .woocommerce-info,
@@ -224,9 +226,10 @@ div.wpforms-container form.wpforms-form .wpforms-page-button,
 	border-top-color: #33a7a4;
 }
 
-::-moz-selection{
+::-moz-selection {
 	background-color: #33a7a4;
 }
+
 ::selection {
 	background-color: #33a7a4;
 }
@@ -246,7 +249,7 @@ div.wpforms-container form.wpforms-form .wpforms-page-button,
 .woocommerce div.product .woocommerce-tabs ul.tabs li.active,
 .woocommerce-page #content div.product .woocommerce-tabs ul.tabs li.active,
 .woocommerce-page div.product .woocommerce-tabs ul.tabs li.active {
-    color: #004652;
+	color: #004652;
 }
 
 #back-to-top .hover,
@@ -287,7 +290,7 @@ div.wpforms-container form.wpforms-form input[type=submit]:hover,
 div.wpforms-container form.wpforms-form button[type=submit]:hover,
 div.wpforms-container form.wpforms-form .wpforms-page-button:hover,
 .citylogic-page-builders-use-theme-styles .testimonials .sow-slider-base .sow-slide-nav:hover {
-    background-color: #004652;
+	background-color: #004652;
 }
 
 /* Link Color */
@@ -311,7 +314,7 @@ a:hover,
 
 /* Site Title Font */
 .site-header .branding .title {
-	font-family: "Nothing You Could Do","Helvetica Neue", sans-serif;
+	font-family: "Nothing You Could Do", "Helvetica Neue", sans-serif;
 }
 
 /* Site Title Solid Font Color */
@@ -334,8 +337,18 @@ a:hover,
 }
 
 /* Heading Font */
-h1, h2, h3, h4, h5, h6,
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a,
 .citylogic-page-builders-use-theme-styles .elementor-widget-heading .elementor-heading-title,
 .widget-area .widget h2,
 .site-footer-widgets ul li h2.widgettitle,
@@ -373,8 +386,18 @@ input[type="submit"] {
 }
 
 /* Heading Font Weight */
-h1, h2, h3, h4, h5, h6,
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a,
 .citylogic-page-builders-use-theme-styles .elementor-widget-heading .elementor-heading-title,
 .citylogic-page-builders-use-theme-styles .elementor-widget-icon-box .elementor-icon-box-content .elementor-icon-box-title,
 .citylogic-page-builders-use-theme-styles .elementor-widget-icon-box .elementor-icon-box-content .elementor-icon-box-title a,
@@ -385,12 +408,12 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
 
 /* Navigation Menu Rollover Background Color */
 .main-navigation.rollover-background-color a:hover,
-.main-navigation.rollover-background-color li.current-menu-item > a,
-.main-navigation.rollover-background-color li.current_page_item > a,
-.main-navigation.rollover-background-color li.current-menu-parent > a,
-.main-navigation.rollover-background-color li.current_page_parent > a,
-.main-navigation.rollover-background-color li.current-menu-ancestor > a,
-.main-navigation.rollover-background-color li.current_page_ancestor > a,
+.main-navigation.rollover-background-color li.current-menu-item>a,
+.main-navigation.rollover-background-color li.current_page_item>a,
+.main-navigation.rollover-background-color li.current-menu-parent>a,
+.main-navigation.rollover-background-color li.current_page_parent>a,
+.main-navigation.rollover-background-color li.current-menu-ancestor>a,
+.main-navigation.rollover-background-color li.current_page_ancestor>a,
 .main-navigation.rollover-background-color button {
 	background-color: #33a7a4;
 }
@@ -401,24 +424,24 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
 }
 
 /* Navigation Menu Font */
-.site-header .site-header-right .main-navigation .menu > ul > li > a,
-.site-header .site-header-right .main-navigation ul.menu > li > a,
-.main-navigation .menu > ul > li > a,
-.main-navigation ul.menu > li > a,
+.site-header .site-header-right .main-navigation .menu>ul>li>a,
+.site-header .site-header-right .main-navigation ul.menu>li>a,
+.main-navigation .menu>ul>li>a,
+.main-navigation ul.menu>li>a,
 .main-navigation .search-button a {
 	font-family: "Raleway", sans-serif;
 }
 
-.main-navigation .menu > ul > li > a,
-.main-navigation ul.menu > li > a {
+.main-navigation .menu>ul>li>a,
+.main-navigation ul.menu>li>a {
 	font-weight: 400;
 }
 
 /* Navigation Menu Solid Font Color */
-.main-navigation .menu > ul > li > a,
-.main-navigation .menu > ul > li > a:hover,
-.main-navigation ul.menu > li > a,
-.main-navigation ul.menu > li > a:hover,
+.main-navigation .menu>ul>li>a,
+.main-navigation .menu>ul>li>a:hover,
+.main-navigation ul.menu>li>a,
+.main-navigation ul.menu>li>a:hover,
 .main-navigation .search-button a,
 .main-navigation .search-button a:hover,
 .header-menu-button .otb-fa.otb-fa-bars,
@@ -426,10 +449,10 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
 	color: #FFFFFF;
 }
 
-.site-header.forced-solid .main-navigation .menu > ul > li > a,
-.site-header.forced-solid .main-navigation .menu > ul > li > a:hover,
-.site-header.forced-solid .main-navigation ul.menu > li > a,
-.site-header.forced-solid .main-navigation ul.menu > li > a:hover,
+.site-header.forced-solid .main-navigation .menu>ul>li>a,
+.site-header.forced-solid .main-navigation .menu>ul>li>a:hover,
+.site-header.forced-solid .main-navigation ul.menu>li>a,
+.site-header.forced-solid .main-navigation ul.menu>li>a:hover,
 .site-header.forced-solid .main-navigation .search-button a,
 .site-header.forced-solid .main-navigation .search-button a:hover {
 	color: #FFFFFF !important;

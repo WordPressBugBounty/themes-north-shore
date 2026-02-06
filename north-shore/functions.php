@@ -4,7 +4,7 @@
  *
  * @package North Shore
  */
-define( 'NORTH_SHORE_THEME_VERSION', '1.0.42' );
+define( 'NORTH_SHORE_THEME_VERSION', '1.0.43' );
 
 global $north_shore_default_settings, $demo_slides;
 
